@@ -1,0 +1,963 @@
+2018-08-04 12:12:03.452  INFO 10204 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 10204 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:12:03.455  INFO 10204 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:12:03.522  INFO 10204 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:12:03 CST 2018]; root of context hierarchy
+2018-08-04 12:12:04.083  INFO 10204 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:12:04.084  WARN 10204 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:12:04.090 ERROR 10204 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:12:03 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:12:04.144  INFO 10204 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:12:04.152 ERROR 10204 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:12:35.254  INFO 11944 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 11944 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:12:35.260  INFO 11944 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:12:35.347  INFO 11944 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702b8b12: startup date [Sat Aug 04 12:12:35 CST 2018]; root of context hierarchy
+2018-08-04 12:12:35.952  INFO 11944 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:12:35.954  WARN 11944 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:12:35.962 ERROR 11944 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702b8b12: startup date [Sat Aug 04 12:12:35 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:12:36.034  INFO 11944 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:12:36.041 ERROR 11944 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:18:09.437  INFO 3628 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 3628 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:18:09.442  INFO 3628 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:18:09.505  INFO 3628 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:18:09 CST 2018]; root of context hierarchy
+2018-08-04 12:18:10.053  INFO 3628 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:18:10.055  WARN 3628 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:18:10.059 ERROR 3628 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:18:09 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:18:10.157  INFO 3628 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:18:10.163 ERROR 3628 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:20:30.659  INFO 1976 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 1976 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:20:30.663  INFO 1976 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:20:30.725  INFO 1976 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:20:30 CST 2018]; root of context hierarchy
+2018-08-04 12:20:31.305  INFO 1976 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:20:31.307  WARN 1976 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:20:31.314 ERROR 1976 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:20:30 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:20:31.414  INFO 1976 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:20:31.420 ERROR 1976 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:30:18.639  INFO 10908 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 10908 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:30:18.643  INFO 10908 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:30:18.712  INFO 10908 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:30:18 CST 2018]; root of context hierarchy
+2018-08-04 12:30:19.291  INFO 10908 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:30:19.294  WARN 10908 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:30:19.311 ERROR 10908 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:30:18 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:30:19.436  INFO 10908 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:30:19.443 ERROR 10908 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:31:22.589  INFO 11164 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 11164 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:31:22.592  INFO 11164 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:31:22.667  INFO 11164 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:31:22 CST 2018]; root of context hierarchy
+2018-08-04 12:31:23.253  INFO 11164 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:31:23.256  WARN 11164 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:31:23.261 ERROR 11164 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:31:22 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:31:23.276  INFO 11164 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:31:23.281 ERROR 11164 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:31:46.823  INFO 9348 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 9348 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:31:46.831  INFO 9348 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:31:46.907  INFO 9348 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:31:46 CST 2018]; root of context hierarchy
+2018-08-04 12:31:47.474  INFO 9348 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:31:47.477  WARN 9348 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+2018-08-04 12:31:47.483 ERROR 9348 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:31:46 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:31:47.566  INFO 9348 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:31:47.573 ERROR 9348 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring_dubbo.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [spring_dubbo.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 20 common frames omitted
+
+2018-08-04 12:32:49.160  INFO 5716 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 5716 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:32:49.164  INFO 5716 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:32:49.234  INFO 5716 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:32:49 CST 2018]; root of context hierarchy
+2018-08-04 12:32:49.838  INFO 5716 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:32:59.990  WARN 5716 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://dubbo.apache.org/schema/dubbo]
+Offending resource: class path resource [spring_dubbo.xml]
+
+2018-08-04 12:32:59.995 ERROR 5716 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:32:49 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:33:00.003  INFO 5716 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:33:00.008 ERROR 5716 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://dubbo.apache.org/schema/dubbo]
+Offending resource: class path resource [spring_dubbo.xml]
+
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:80) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:301) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1408) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1401) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:172) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:142) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:94) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:508) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:35:35.802  INFO 2896 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 2896 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:35:35.807  INFO 2896 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:35:35.886  INFO 2896 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:35:35 CST 2018]; root of context hierarchy
+2018-08-04 12:35:36.448  INFO 2896 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:35:57.962  WARN 2896 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Ignored XML validation warning
+
+org.xml.sax.SAXParseException: schema_reference.4: 无法读取方案文档 'http://code.alibabatech.com/schema/dubbo/dubbo.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4162) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4153) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2486) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2183) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:569) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:613) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2446) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1767) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) [na:1.8.0_92]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_92]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_92]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_92]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_92]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:647) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2171) [na:1.8.0_92]
+	... 39 common frames omitted
+
+2018-08-04 12:35:57.968  WARN 2896 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 19 in XML document from class path resource [spring_dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 45; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+2018-08-04 12:35:57.970 ERROR 2896 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:35:35 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:35:57.982  INFO 2896 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:35:57.986 ERROR 2896 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 19 in XML document from class path resource [spring_dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 19; columnNumber: 45; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_92]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+
+2018-08-04 12:40:25.892  INFO 14320 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 14320 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:40:25.897  INFO 14320 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:40:25.979  INFO 14320 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:40:25 CST 2018]; root of context hierarchy
+2018-08-04 12:40:26.836  INFO 14320 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:40:48.005  WARN 14320 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Ignored XML validation warning
+
+org.xml.sax.SAXParseException: schema_reference.4: 无法读取方案文档 'http://code.alibabatech.com/schema/dubbo/dubbo.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4162) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4153) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2486) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2183) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:569) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:613) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2446) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1767) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) [na:1.8.0_92]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_92]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_92]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_92]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_92]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:647) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2171) [na:1.8.0_92]
+	... 39 common frames omitted
+
+2018-08-04 12:40:48.009  WARN 14320 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 20 in XML document from class path resource [spring_dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 45; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+2018-08-04 12:40:48.010 ERROR 14320 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:40:25 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:40:48.029  INFO 14320 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:40:48.045 ERROR 14320 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 20 in XML document from class path resource [spring_dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 45; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_92]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+
+2018-08-04 12:42:49.031  INFO 3152 --- [main] com.sangbill.dubbo.provider.Application  : Starting Application on DESKTOP-MQETQCJ with PID 3152 (D:\Workspaces\demo\git-it\dubbo\dubbo-provider\target\classes started by LQB in D:\Workspaces\demo\git-it\dubbo\dubbo-provider)
+2018-08-04 12:42:49.034  INFO 3152 --- [main] com.sangbill.dubbo.provider.Application  : No active profile set, falling back to default profiles: default
+2018-08-04 12:42:49.108  INFO 3152 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:42:49 CST 2018]; root of context hierarchy
+2018-08-04 12:42:49.686  INFO 3152 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring_dubbo.xml]
+2018-08-04 12:43:10.884  WARN 3152 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Ignored XML validation warning
+
+org.xml.sax.SAXParseException: schema_reference.4: 无法读取方案文档 'http://code.alibabatech.com/schema/dubbo/dubbo.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:306) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4162) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4153) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2486) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2183) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:569) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:613) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2446) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1767) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) [na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) [na:1.8.0_92]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_92]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_92]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_92]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_92]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_92]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_92]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308) ~[na:1.8.0_92]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1169) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1105) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:999) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:933) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1513) ~[na:1.8.0_92]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:647) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2171) [na:1.8.0_92]
+	... 39 common frames omitted
+
+2018-08-04 12:43:10.894  WARN 3152 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 20 in XML document from class path resource [spring_dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 45; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+2018-08-04 12:43:10.895 ERROR 3152 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cdd8682: startup date [Sat Aug 04 12:42:49 CST 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:414) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.destroySingletons(FactoryBeanRegistrySupport.java:230) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1030) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:556) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+
+2018-08-04 12:43:10.910  INFO 3152 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-08-04 12:43:10.915 ERROR 3152 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 20 in XML document from class path resource [spring_dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 20; columnNumber: 45; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromImportedResources(ConfigurationClassBeanDefinitionReader.java:353) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:142) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:320) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.sangbill.dubbo.provider.Application.main(Application.java:17) [classes/:na]
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1911) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:760) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:357) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.8.0_92]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_92]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+
