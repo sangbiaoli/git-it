@@ -1,7 +1,8 @@
 package com.sangbill.dubbo.api;
 
+
 /**
- * 定义接口
+ * 瀹氫箟dubbo鎺ュ彛
  * @author LQB
  *
  */
