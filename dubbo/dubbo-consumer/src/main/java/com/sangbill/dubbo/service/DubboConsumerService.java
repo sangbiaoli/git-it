@@ -2,7 +2,7 @@ package com.sangbill.dubbo.service;
 import org.springframework.stereotype.Component;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.sangbill.dubbo.api.DubboService;
+import com.sangbill.dubbo.DubboService;
 
 
 
@@ -14,7 +14,7 @@ import com.sangbill.dubbo.api.DubboService;
 @Component
 public class DubboConsumerService {
 
-    @Reference(version = "1.0.0")
+    @Reference
     DubboService dubboService;
 
     public void printMsg() {

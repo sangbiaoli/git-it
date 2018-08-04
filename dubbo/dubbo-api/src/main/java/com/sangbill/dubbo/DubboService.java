@@ -1,4 +1,4 @@
-package com.sangbill.dubbo.api;
+package com.sangbill.dubbo;
 
 
 /**
