@@ -1,0 +1,14 @@
+<books>
+  <book>
+  	<id>book_1</id>
+    <name>Java编程思想</name>
+    <summary>Bruce Eckel</summary>
+    <content>利用XStream在Java对象和XML之间相互转换 - Baple的专栏 - 博客</content>
+  </book>
+  <book>
+  	<id>book_2</id>
+    <name>XStream</name>
+    <summary>读取文件</summary>
+    <content>XStream 读取文件内容转换成JAVA对象 - 学习点滴 - ITeye技术网站</content>
+  </book>
+</books>
