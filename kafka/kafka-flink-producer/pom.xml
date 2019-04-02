@@ -8,14 +8,12 @@
 		<artifactId>kafka</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>kafka-consumer</artifactId>
-	<name>kafka-consumer</name>
+	<artifactId>kafka-flink-producer</artifactId>
+	<name>kafka-flink-producer</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
 	<dependencies>
 		<!-- Spring Boot Web 依赖 -->
 		<dependency>
