@@ -1,4 +1,4 @@
-package com.sangbill.kafka.service;
+package com.sangbill.kafka.consumer.service;
 
 import java.io.IOException;
 

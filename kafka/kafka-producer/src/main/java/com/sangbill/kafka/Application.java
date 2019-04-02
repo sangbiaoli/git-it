@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.sangbill.kafka.service.KafkaProducer;
+import com.sangbill.kafka.producer.service.KafkaProducer;
 import com.sangbill.kafka.util.SpringUtil;
 
 @SpringBootApplication
