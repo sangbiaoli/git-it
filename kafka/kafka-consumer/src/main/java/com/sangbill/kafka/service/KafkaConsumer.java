@@ -13,7 +13,7 @@ public class KafkaConsumer {
 	 * @param record
 	 * @throws IOException
 	 */
-	@KafkaListener(topics = {"test"})
+	@KafkaListener(topics = "test")
     public void receive(String content){
         System.err.println("Receive:" + content);
     }
