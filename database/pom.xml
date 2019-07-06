@@ -60,6 +60,11 @@
 			<artifactId>hibernate-c3p0</artifactId>
 		</dependency>
 		
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-proxool</artifactId>
+		</dependency>
+		
 		<!-- mybatis -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
