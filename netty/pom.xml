@@ -3,4 +3,12 @@
   <groupId>com.sangbill</groupId>
   <artifactId>netty</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  	<dependency>
+	    <groupId>io.netty</groupId>
+	    <artifactId>netty-all</artifactId>
+	    <version>4.1.37.Final</version>
+	</dependency>
+  </dependencies>
 </project>
