@@ -29,7 +29,7 @@
     </display>  
   </interface>  
   <interface id="4" language="java" name="com.mchange.v2.c3p0.PooledDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="568" y="351"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -38,7 +38,7 @@
     </display>  
   </interface>  
   <class id="5" language="java" name="com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="563" y="483"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -47,7 +47,7 @@
     </display>  
   </class>  
   <class id="6" language="java" name="com.mchange.v2.c3p0.AbstractComboPooledDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="313" y="567"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -56,7 +56,7 @@
     </display>  
   </class>  
   <class id="7" language="java" name="com.mchange.v2.c3p0.ComboPooledDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="311" y="670"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -65,7 +65,7 @@
     </display>  
   </class>  
   <class id="8" language="java" name="com.mchange.v2.c3p0.PoolBackedDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="796" y="566"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -74,7 +74,7 @@
     </display>  
   </class>  
   <class id="9" language="java" name="com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="377" y="351"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -83,7 +83,7 @@
     </display>  
   </class>  
   <class id="10" language="java" name="com.mchange.v2.c3p0.impl.IdentityTokenResolvable" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="163" y="229"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -92,7 +92,7 @@
     </display>  
   </class>  
   <class id="11" language="java" name="com.mchange.v2.c3p0.impl.AbstractIdentityTokenized" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="163" y="130"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -101,7 +101,7 @@
     </display>  
   </class>  
   <interface id="12" language="java" name="com.mchange.v2.c3p0.impl.IdentityTokenized" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="164" y="-13"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -110,7 +110,7 @@
     </display>  
   </interface>  
   <class id="13" language="java" name="com.mchange.v2.c3p0.impl.DriverManagerDataSourceBase" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="166" y="350"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -119,7 +119,7 @@
     </display>  
   </class>  
   <class id="14" language="java" name="com.mchange.v2.c3p0.DriverManagerDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="165" y="485"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -128,7 +128,7 @@
     </display>  
   </class>  
   <class id="15" language="java" name="com.mchange.v2.c3p0.impl.WrapperConnectionPoolDataSourceBase" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="-97" y="350"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -137,7 +137,7 @@
     </display>  
   </class>  
   <class id="16" language="java" name="com.mchange.v2.c3p0.WrapperConnectionPoolDataSource" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="-99" y="484"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -146,7 +146,7 @@
     </display>  
   </class>  
   <class id="17" language="java" name="com.mchange.v2.c3p0.impl.C3P0PooledConnection" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1186" y="467"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -155,7 +155,7 @@
     </display>  
   </class>  
   <class id="18" language="java" name="com.mchange.v2.c3p0.impl.AbstractC3P0PooledConnection" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1186" y="346"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -173,7 +173,7 @@
     </display>  
   </interface>  
   <interface id="20" language="java" name="com.mchange.v2.c3p0.impl.C3P0PooledConnection.ProxyConnection" 
-    project="database" file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" 
+    project="database" file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="958" y="567"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -183,7 +183,7 @@
     </display>  
   </interface>  
   <class id="21" language="java" name="com.mchange.v2.c3p0.impl.C3P0PooledConnection.ProxyConnectionInvocationHandler" 
-    project="database" file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" 
+    project="database" file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1384" y="564"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -193,7 +193,7 @@
     </display>  
   </class>  
   <interface id="22" language="java" name="com.mchange.v2.c3p0.C3P0ProxyConnection" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="956" y="475"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -211,7 +211,7 @@
     </display>  
   </interface>  
   <class id="24" language="java" name="com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="771" y="349"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -220,7 +220,7 @@
     </display>  
   </class>  
   <class id="25" language="java" name="com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool" project="database" 
-    file="C:/Users/bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
+    file="C:/Users/Bill/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" binary="true" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="817" y="191"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
