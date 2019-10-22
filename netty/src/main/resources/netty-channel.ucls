@@ -2,7 +2,7 @@
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="io.netty.channel.socket.nio.NioServerSocketChannel" project="netty" 
-    file="C:/Users/bill/.m2/repository/io/netty/netty-all/4.1.37.Final/netty-all-4.1.37.Final.jar" binary="true" 
+    file="C:/Users/Bill/.m2/repository/io/netty/netty-all/4.1.37.Final/netty-all-4.1.37.Final.jar" binary="true" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1010" y="652"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
