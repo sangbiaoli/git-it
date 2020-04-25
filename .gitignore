@@ -4,4 +4,5 @@ target
 *.iml
 .classpath
 .project
+.dia~
 logs/
