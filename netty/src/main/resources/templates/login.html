@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
-<head th:include="common/common"></head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title></title>
+    <link rel="icon" type="image/x-icon" th:href="@{/favicon.ico}">
+    <script th:src="@{//lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js}"></script>
+</head>
 <body>
-    <form id="mainForm">
+    <form>
         <div>用户名：<input type="text" name="username" id="username"></div>
         <div>密码：<input type="password" name="passwd" id="passwd"></div>
         <button onclick="common.login()">登录</button>

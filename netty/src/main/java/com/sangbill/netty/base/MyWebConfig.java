@@ -21,7 +21,7 @@ public class MyWebConfig extends WebMvcConfigurationSupport {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(domainInterceptor).addPathPatterns("/**");
-		registry.addInterceptor(visitorInterceptor).addPathPatterns("/admin/**");
+		registry.addInterceptor(visitorInterceptor).addPathPatterns("/admin/**").excludePathPatterns("/admin/page/login");
 	}
 
 	/**

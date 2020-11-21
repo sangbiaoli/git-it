@@ -1,11 +1,13 @@
 package com.sangbill.netty.web;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+@Controller
 @RequestMapping("/admin/page")
 public class PageController {
 
-    @GetMapping("/login")
+    @RequestMapping("/login")
     public String login(){
         return "login";
     }
