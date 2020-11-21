@@ -1,8 +1,8 @@
 package com.sangbill.netty.service.impl;
 
+import com.sangbill.netty.domain.dto.LoginDTO;
 import com.sangbill.netty.domain.entity.User;
-import com.sangbill.netty.domain.vo.LoginDTO;
-import com.sangbill.netty.domain.vo.Result;
+import com.sangbill.netty.base.Result;
 import com.sangbill.netty.service.UserService;
 import com.sangbill.netty.util.Cache;
 import org.springframework.stereotype.Service;

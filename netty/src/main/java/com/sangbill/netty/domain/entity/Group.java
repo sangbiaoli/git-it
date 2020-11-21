@@ -1,5 +1,6 @@
 package com.sangbill.netty.domain.entity;
 
+import com.sangbill.netty.domain.vo.UserVO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,7 +16,7 @@ public class Group {
     private Integer id;
     private String groupName;
 
-    private List<User> userList;
+    private List<UserVO> userList;
 
     public Group(int id, String groupName) {
         this.id = id;

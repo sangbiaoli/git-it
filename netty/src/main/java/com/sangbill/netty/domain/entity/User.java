@@ -1,5 +1,7 @@
 package com.sangbill.netty.domain.entity;
 
+import com.sangbill.netty.domain.vo.GroupVO;
+import com.sangbill.netty.domain.vo.UserVO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,13 +12,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class User {
+public class User{
+
     private Integer id;
     private String username;
     private String passwd;
 
-    private List<User> friend;
-    private List<Group> groupList;
+    private List<UserVO> friend;
+    private List<GroupVO> groupList;
 
     public User(int id, String username, String passwd) {
         this.id = id;

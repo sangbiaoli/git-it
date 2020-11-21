@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 
 @Configuration
 public class MyWebConfig extends WebMvcConfigurationSupport {
@@ -21,7 +22,9 @@ public class MyWebConfig extends WebMvcConfigurationSupport {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(domainInterceptor).addPathPatterns("/**");
-		registry.addInterceptor(visitorInterceptor).addPathPatterns("/admin/**").excludePathPatterns("/admin/page/login");
+		registry.addInterceptor(visitorInterceptor).addPathPatterns("/admin/**").excludePathPatterns(
+			Arrays.asList("/admin/page/login","/admin/user/doLogin")
+		);
 	}
 
 	/**

@@ -1,4 +1,4 @@
-package com.sangbill.netty.domain.vo;
+package com.sangbill.netty.base;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

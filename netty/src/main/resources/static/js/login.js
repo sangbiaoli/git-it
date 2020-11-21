@@ -2,22 +2,21 @@ var common = {
     login : function() {
         var param = {
             "username":$("#username").val(),
-            "password":$("#password").val()
+            "passwd":$("#passwd").val()
         };
 
         $.ajax({
-            cache: true,
-            type: "POST",
+            type: "post",
             url: '/admin/user/doLogin',
-            data: param,
-            dataType:'json',
-            async: false,
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(param),
             success: function (data) {
                 if (data.code == 0) {
-                    layer.msg('操作成功');
-                    this.href = "/index";
+                    alert('操作成功');
+                    window.location.href = "/admin/page/index";
                 } else {
-                    layer.msg(data.msg);
+                    alert(data.msg);
                 }
             }
         });

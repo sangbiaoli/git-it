@@ -2,6 +2,8 @@ package com.sangbill.netty.util;
 
 import com.sangbill.netty.domain.entity.Group;
 import com.sangbill.netty.domain.entity.User;
+import com.sangbill.netty.domain.vo.GroupVO;
+import com.sangbill.netty.domain.vo.UserVO;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -34,8 +36,8 @@ public class Cache {
         Group group = groupMap.get(groupId);
         for(int i = 0;i < userIdList.size();i++){
             User temp = userMap.get(userIdList.get(i));
-            group.getUserList().add(temp);
-            temp.getGroupList().add(group);
+            group.getUserList().add(new UserVO(temp));
+            temp.getGroupList().add(new GroupVO(group));
         }
     }
 
@@ -50,8 +52,8 @@ public class Cache {
         User user = userMap.get(userId);
         for(int i = 0;i < friendsId.size();i++){
             User temp = userMap.get(friendsId.get(i));
-            user.getFriend().add(temp);
-            temp.getFriend().add(user);
+            user.getFriend().add(new UserVO(temp));
+            temp.getFriend().add(new UserVO(user));
         }
     }
 

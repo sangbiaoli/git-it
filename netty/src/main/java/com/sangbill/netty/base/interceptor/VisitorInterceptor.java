@@ -23,7 +23,7 @@ import java.util.Date;
 @Component
 public class VisitorInterceptor implements HandlerInterceptor {
 	
-
+	public static final String SESSION_USER = "SESSION_USER";
 	private long beginTime;
 
 	private String url;
@@ -37,7 +37,7 @@ public class VisitorInterceptor implements HandlerInterceptor {
 		log.info("开始处理请求:{},IP:{},时间:{},参数:{}", url, ip, DateUtil.date2String(new Date(),DateUtil.yyyy_MM_dd_HH_mm_ss), request.getQueryString());
 
 		HttpSession session = request.getSession();
-		User user = (User) session.getAttribute("user");
+		User user = (User) session.getAttribute(SESSION_USER);
 		if(user == null){
 			response.sendRedirect("/common/noright");
 			return false;

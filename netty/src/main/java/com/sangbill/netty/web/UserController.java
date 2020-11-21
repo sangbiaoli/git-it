@@ -1,18 +1,17 @@
 package com.sangbill.netty.web;
 
-import com.sangbill.netty.domain.vo.LoginDTO;
-import com.sangbill.netty.domain.vo.Result;
-import com.sangbill.netty.service.GroupService;
+import com.sangbill.netty.base.interceptor.VisitorInterceptor;
+import com.sangbill.netty.base.Result;
+import com.sangbill.netty.domain.dto.LoginDTO;
 import com.sangbill.netty.service.UserService;
-import org.springframework.http.HttpRequest;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@RestController("/admin/user")
+@RestController
+@RequestMapping("/admin/user")
 public class UserController {
 
     @Resource
@@ -28,7 +27,7 @@ public class UserController {
     }
 
     private void afterSuccessLogin(HttpServletRequest req, Object data) {
-        req.getSession().setAttribute("user",data);
+        req.getSession().setAttribute(VisitorInterceptor.SESSION_USER,data);
     }
 
 }
