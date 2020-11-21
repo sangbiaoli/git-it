@@ -1,8 +1,7 @@
-package com.sangbill.netty.base;
+package com.sangbill.netty.base.conf;
 
 import com.sangbill.netty.base.interceptor.DomainInterceptor;
 import com.sangbill.netty.base.interceptor.VisitorInterceptor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

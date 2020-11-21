@@ -1,4 +1,4 @@
-package com.sangbill.netty.base;
+package com.sangbill.netty.base.conf;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

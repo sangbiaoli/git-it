@@ -1,5 +1,5 @@
 var common = {
-    login : function() {
+    items : function() {
 
     }
 }

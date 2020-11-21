@@ -1,5 +1,6 @@
 package com.sangbill.netty.web;
 
+import com.sangbill.netty.base.BaseController;
 import com.sangbill.netty.base.interceptor.VisitorInterceptor;
 import com.sangbill.netty.base.Result;
 import com.sangbill.netty.domain.dto.LoginDTO;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/admin/user")
-public class UserController {
+public class UserController extends BaseController {
 
     @Resource
     private UserService userService;
