@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head th:include="common/common"></head>
+<body>
+    <form id="mainForm">
+        <div>用户名：<input type="text" name="username" id="username"></div>
+        <div>密码：<input type="password" name="passwd" id="passwd"></div>
+        <button onclick="common.login()">登录</button>
+    </form>
+</body>
+<script th:src="@{/static/js/login.js}"></script>
+</html>

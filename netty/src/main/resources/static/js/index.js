@@ -1,0 +1,5 @@
+var common = {
+    login : function() {
+
+    }
+}
