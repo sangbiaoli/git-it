@@ -3,10 +3,7 @@ package com.sangbill.netty.netty;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.channel.*;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpResponseStatus;
@@ -25,10 +22,9 @@ public class ChatWebSocketInboundHandler extends SimpleChannelInboundHandler<Obj
 	 * 唯一要求要重写的方法
 	 * @param ctx
 	 * @param msg
-	 * @throws Exception
 	 */
 	@Override
-	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+	protected void channelRead0(ChannelHandlerContext ctx, Object msg) {
 		if (msg instanceof FullHttpRequest) {
 			handleHttpRequest(ctx, ((FullHttpRequest) msg));
 		} else if (msg instanceof WebSocketFrame) {
@@ -45,6 +41,22 @@ public class ChatWebSocketInboundHandler extends SimpleChannelInboundHandler<Obj
 			}
 			handlerWebSocketFrame(ctx, webMsg);
 		}
+	}
+
+	@Override
+	public void channelActive(ChannelHandlerContext ctx) {
+		log.info("websocket客户端与服务端连接开启");
+	}
+
+	@Override
+	public void channelInactive(ChannelHandlerContext ctx) {
+		NettyGlobal.channelMap.remove(ctx.channel().id());
+		log.info("websocket客户端与服务端连接关闭");
+	}
+
+	@Override
+	public void channelReadComplete(ChannelHandlerContext ctx) {
+		ctx.flush();
 	}
 
 	private void handlerWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
