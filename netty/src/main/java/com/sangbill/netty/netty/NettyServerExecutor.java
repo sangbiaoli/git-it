@@ -6,8 +6,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Component
-public class NettyExecutorService {
-	public NettyExecutorService() {
+public class NettyServerExecutor {
+	public NettyServerExecutor() {
 		System.err.println("---------- Spring自动加载netty开始   ---------- ");
 		NettyServer server = new NettyServer();
 		ExecutorService es = Executors.newCachedThreadPool();

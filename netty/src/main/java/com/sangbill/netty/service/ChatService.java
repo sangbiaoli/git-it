@@ -13,4 +13,6 @@ public interface ChatService {
     Result loadChatHis(User user, ChatItemVO itemVO);
 
     Result send(User user, ChatContentVO contentVO);
+
+    void nofityUser(ChatContentVO contentVO);
 }
