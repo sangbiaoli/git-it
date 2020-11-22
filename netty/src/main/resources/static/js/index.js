@@ -37,7 +37,7 @@ var common = {
             data: JSON.stringify(param),
             success: function (data) {
                 if (data.code == 0) {
-
+                    console.log(document.cookie);
                 } else {
                     alert(data.msg);
                 }
