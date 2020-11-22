@@ -60,7 +60,7 @@ var heartCheck = {
     },
     start: function(){
         this.timeoutObj = setTimeout(function(){
-            sendMessage("ping");
+            netty.sendMessage("ping");
         }, this.timeout)
     }
 };
