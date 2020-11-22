@@ -7,6 +7,7 @@ import com.sangbill.netty.domain.entity.User;
 import com.sangbill.netty.domain.vo.ChatContentVO;
 import com.sangbill.netty.domain.vo.ChatItemVO;
 import com.sangbill.netty.domain.vo.UserVO;
+import com.sangbill.netty.netty.ChatWebSocketParam;
 import com.sangbill.netty.netty.NettyGlobal;
 import com.sangbill.netty.service.ChatService;
 import com.sangbill.netty.util.Cache;
@@ -68,7 +69,11 @@ public class ChatServiceImpl implements ChatService {
      * @param userId
      */
     public void channelNofity(ChatContentVO contentVO, Integer userId){
-        String text = JSONObject.toJSONString(contentVO);
+        ChatWebSocketParam param = new ChatWebSocketParam();
+        param.setType(NettyGlobal.NettyMessageType.CHAT.key);
+        param.setMessage("收到新消息");
+        param.setData(contentVO.getContent());
+        String text = JSONObject.toJSONString(param);
         Channel channel = (Channel) NettyGlobal.channelMap.get(userId);
         if(channel!=null && channel.isActive()){
             channel.writeAndFlush(new TextWebSocketFrame(text));
