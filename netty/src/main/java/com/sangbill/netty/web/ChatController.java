@@ -2,11 +2,9 @@ package com.sangbill.netty.web;
 
 import com.sangbill.netty.base.BaseController;
 import com.sangbill.netty.base.Result;
-import com.sangbill.netty.domain.dto.LoginDTO;
 import com.sangbill.netty.domain.vo.ChatContentVO;
 import com.sangbill.netty.domain.vo.ChatItemVO;
 import com.sangbill.netty.service.ChatService;
-import com.sangbill.netty.service.UserService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -45,7 +45,13 @@ var netty = {
     },
     receiveMessage:function(data){
         var message = JSON.parse(data);
+        var chatId = common.getChatId();
         console.log(message);
+        if(message.chatId == chatId){
+            var lis = $("#chat-his").html();
+            lis += '<li class="not-my-his">'+message.content+'</li>';
+            $("#chat-his").html(lis);
+        }
     }
 };
 /**

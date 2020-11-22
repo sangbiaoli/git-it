@@ -96,7 +96,9 @@ var common = {
             data: JSON.stringify(param),
             success : function(data, status) {
                 if (data.code == 0) {
-                    common.loadChatWinHis();
+                    var lis = $("#chat-his").html();
+                    lis += '<li class="my-his">'+param["content"]+'</li>';
+                    $("#chat-his").html(lis);
                 } else {
                     alert(data.msg);
                 }
