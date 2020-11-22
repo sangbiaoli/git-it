@@ -2,7 +2,7 @@
 var netty = {
     socket:null,
     init:function () {
-        var webSocketUrl = "wss://localhost:8081/websocket";
+        var webSocketUrl = "ws://localhost:8081/websocket";
         if (!window.WebSocket) {
             window.WebSocket = window.MozWebSocket;
         }
