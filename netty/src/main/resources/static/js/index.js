@@ -101,5 +101,5 @@ $(function () {
     mycook.init();
     common.init();
     netty.init();
-    $("#username").val(mycook.getUserName());
+    $("#username").html(mycook.getUserName());
 })
