@@ -69,7 +69,8 @@ public class ChatWebSocketInboundHandler extends SimpleChannelInboundHandler<Obj
 		// 本例程仅支持文本消息，不支持二进制消息
 		if (!(frame instanceof TextWebSocketFrame)) {
 			System.out.println("本例程仅支持文本消息，不支持二进制消息");
-			throw new UnsupportedOperationException(String.format("%s frame types not supported", frame.getClass().getName()));
+//			throw new UnsupportedOperationException(String.format("%s frame types not supported", frame.getClass().getName()));
+			return;
 		}
 		// 請求消息
 		String request = ((TextWebSocketFrame) frame).text();
