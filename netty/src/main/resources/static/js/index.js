@@ -86,4 +86,5 @@ var common = {
 
 $(function () {
     common.loadChatItem();
+    netty.init();
 })

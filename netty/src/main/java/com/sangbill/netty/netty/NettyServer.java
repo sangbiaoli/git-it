@@ -17,7 +17,7 @@ public class NettyServer implements Runnable{
 			b.channel(NioServerSocketChannel.class);
 			b.childHandler(new ChatChannelHandler());
 			System.out.println("服务端开启等待客户端连接 ... ...");
-			Channel ch = b.bind(7393).sync().channel();
+			Channel ch = b.bind(8081).sync().channel();
 			ch.closeFuture().sync();
 		} catch (Exception e) {
 			e.printStackTrace();
