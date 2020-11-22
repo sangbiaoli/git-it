@@ -10,7 +10,7 @@ var mycook = {
     getUserId:function(){
         return mycook.obj["userId"];
     },
-    getUserName() {
+    getUserName:function(){
         return mycook.obj["username"];
     },
 };
