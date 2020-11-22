@@ -35,6 +35,22 @@
         .chat-win-input{
             height: 200px;
         }
+
+        #chat-his li{
+            width: 60%;
+            list-style-type:none;
+            border: 1px dashed lightcoral;
+            margin-bottom: 5px;
+        }
+        .not-my-his{
+            float: left;
+            text-align: left;
+        }
+        .my-his{
+            float: right;
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -51,9 +67,9 @@
             </div>
             <div class="col-md-9 chat-win">
                 <div class="chat-win-his">
-                    <ul>
-                        <li style="width: 100%;float: left">左边</li>
-                        <li style="float: right;">右边</li>
+                    <ul id="chat-his">
+                        <li class="not-my-his">左边</li>
+                        <li class="my-his">右边</li>
                     </ul>
                 </div>
                 <div class="chat-win-input">

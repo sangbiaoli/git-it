@@ -1,4 +1,8 @@
 var common = {
+    getUserId:function(){
+        var cookies = document.cookie.split("&");
+        return cookies[0].split("=")[1];
+    },
     loadChatItem:function() {
         $.ajax({
             type: "post",
@@ -37,7 +41,18 @@ var common = {
             data: JSON.stringify(param),
             success: function (data) {
                 if (data.code == 0) {
-                    console.log(document.cookie);
+                    var userId = common.getUserId();
+                    $("#chat-his").empty();
+                    var lis = "";
+                    for(var i = 0;i < data.data.length;i++){
+                        var item = data.data[i];
+                        if(item.user.id == userId){
+                            lis += '<li class="my-his">'+item.content+'</li>';
+                        }else{
+                            lis += '<li class="not-my-his">'+item.content+'</li>';
+                        }
+                    }
+                    $("#chat-his").html(lis);
                 } else {
                     alert(data.msg);
                 }
@@ -57,7 +72,7 @@ var common = {
             data: JSON.stringify(param),
             success : function(data, status) {
                 if (data.code == 0) {
-                    loadChatWinHis();
+                    common.loadChatWinHis();
                 } else {
                     alert(data.msg);
                 }

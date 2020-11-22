@@ -8,18 +8,24 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class ChatItemVO {
-    private Integer id;
     private String name;
     private String chatId;
 
+    /**
+     * 保证id小的在前面
+     * @param friend
+     * @param userId
+     */
     public ChatItemVO(UserVO friend,Integer userId){
-        this.id = friend.getId();
         this.name = friend.getUsername();
-        this.chatId = "u"+friend.getId()+"_u"+userId;
+        if(friend.getId() > userId){
+            this.chatId = "u"+userId+"_u"+friend.getId();
+        }else{
+            this.chatId = "u"+friend.getId()+"_u"+userId;
+        }
     }
 
     public ChatItemVO(GroupVO groupVO){
-        this.id = groupVO.getId();
         this.name = groupVO.getGroupName();
         this.chatId = "g"+groupVO.getId();
     }
