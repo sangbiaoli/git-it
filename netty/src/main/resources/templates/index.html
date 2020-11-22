@@ -3,13 +3,63 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title></title>
+    <title>聊天室</title>
     <link rel="icon" type="image/x-icon" th:href="@{/favicon.ico}">
-    <script th:src="@{//lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js}"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .chat{
+            border: 1px solid;
+        }
+        /*-- 聊天用户--*/
+        .chat-user{
+            padding-right: 0px;
+        }
+        .chat-user-item{
+            border-bottom: 1px solid gray;
+        }
+        .active{
+            background-color: lightgreen;
+        }
+        /*-- 聊天内容--*/
+        .chat-win{
+            border-left: 1px solid gray;
+            padding-left: 0px;
+        }
+        .chat-win-his{
+            border-bottom: 1px solid gray;
+            height: 500px;
+        }
+        .chat-win-input{
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
 <div>
-    进入聊天室了
+    <h1>进入聊天室</h1>
+    <div style="align-content: center;width: 70%;">
+        <div class="row chat">
+            <div class="col-md-3 chat-user">
+                <ul class="nav nav-pills nav-stacked" id="chat-users">
+                    <li class="chat-user-item active">用户1</li>
+                    <li class="chat-user-item">用户2</li>
+                    <li class="chat-user-item">用户3</li>
+                </ul>
+            </div>
+            <div class="col-md-9 chat-win">
+                <div class="chat-win-his">
+                    聊天窗口
+                </div>
+                <div class="chat-win-input">
+                    聊天发送
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 </body>
 <script th:src="@{/static/js/index.js}"></script>
