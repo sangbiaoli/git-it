@@ -2,6 +2,7 @@ package com.sangbill.netty.service.impl;
 
 import com.sangbill.netty.base.Result;
 import com.sangbill.netty.domain.dto.LoginDTO;
+import com.sangbill.netty.domain.entity.Group;
 import com.sangbill.netty.domain.entity.User;
 import com.sangbill.netty.domain.vo.ChatContentVO;
 import com.sangbill.netty.domain.vo.ChatItemVO;
@@ -20,23 +21,42 @@ public class ChatServiceImpl implements ChatService {
 
     @Override
     public Result loadChatItem(User user) {
-        List<ChatItemVO> list = new ArrayList();
-        for(int i = 0;i < user.getFriend().size();i++){
-            list.add(new ChatItemVO(user.getFriend().get(i)));
-        }
-        for(int i = 0;i < user.getGroupList().size();i++){
-            list.add(new ChatItemVO(user.getGroupList().get(i)));
-        }
-        return Result.success("成功",list);
+        return Result.success("成功",user.getChatItems());
     }
 
     @Override
     public Result loadChatHis(User user, ChatItemVO itemVO) {
-        return Result.success("成功", Collections.emptyList());
+        if(checkChatId(user,itemVO)){
+            return Result.success("成功", Cache.getChatList(itemVO.getChatId()));
+        }else{
+            return Result.fail("失败");
+        }
     }
 
     @Override
     public Result send(User user, ChatContentVO contentVO) {
-        return Result.success("发送成功");
+        ChatItemVO itemVO = new ChatItemVO();
+        itemVO.setChatId(contentVO.getChatId());
+        if(checkChatId(user,itemVO)){
+            contentVO.setUser(user);
+            Cache.addChat(contentVO);
+            return Result.success("成功");
+        }else{
+            return Result.fail("失败");
+        }
     }
+    
+    private boolean checkChatId(User user, ChatItemVO itemVO) {
+        Integer groupId = itemVO.parseGroupId();
+        Integer[] userIds = itemVO.parseUserIds();
+        if(groupId != null){
+            return user.checkGroup(groupId);
+        }else if(userIds != null){
+            return user.checkFriend(userIds);
+        }else{
+            return false;
+        }
+    }
+
+
 }

@@ -10,20 +10,37 @@ import lombok.NoArgsConstructor;
 public class ChatItemVO {
     private Integer id;
     private String name;
-    private Integer type;
     private String chatId;
 
-    public ChatItemVO(UserVO userVO){
-        this.id = userVO.getId();
-        this.name = userVO.getUsername();
-        this.type = 1;
-        this.chatId = this.type+"_"+this.id;
+    public ChatItemVO(UserVO friend,Integer userId){
+        this.id = friend.getId();
+        this.name = friend.getUsername();
+        this.chatId = "u"+friend.getId()+"_u"+userId;
     }
 
     public ChatItemVO(GroupVO groupVO){
         this.id = groupVO.getId();
         this.name = groupVO.getGroupName();
-        this.type = 2;
-        this.chatId = this.type+"_"+this.id;
+        this.chatId = "g"+groupVO.getId();
+    }
+
+    public Integer parseGroupId() {
+        if(this.chatId.startsWith("g")){
+            return Integer.parseInt(this.chatId.split("g")[1]);
+        }else{
+            return null;
+        }
+    }
+
+    public Integer[] parseUserIds() {
+        if(this.chatId.startsWith("u")){
+            String[] s = this.chatId.split("_");
+            return new Integer[]{
+                Integer.parseInt(s[0].split("u")[1]),
+                Integer.parseInt(s[1].split("u")[1])
+            };
+        }else{
+            return null;
+        }
     }
 }

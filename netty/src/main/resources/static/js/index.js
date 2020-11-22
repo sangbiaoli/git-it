@@ -56,7 +56,11 @@ var common = {
             contentType: "application/json;charset=utf-8",
             data: JSON.stringify(param),
             success : function(data, status) {
-
+                if (data.code == 0) {
+                    loadChatWinHis();
+                } else {
+                    alert(data.msg);
+                }
             },
         });
     },

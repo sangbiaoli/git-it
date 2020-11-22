@@ -2,27 +2,34 @@ package com.sangbill.netty.util;
 
 import com.sangbill.netty.domain.entity.Group;
 import com.sangbill.netty.domain.entity.User;
+import com.sangbill.netty.domain.vo.ChatContentVO;
 import com.sangbill.netty.domain.vo.GroupVO;
 import com.sangbill.netty.domain.vo.UserVO;
-import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
-import javax.annotation.PostConstruct;
 import java.util.*;
 
 public class Cache {
-    private static List<User> userList;
-    private static List<Group> groupList;
+    private static List<User> userList = new ArrayList<>();
+    private static List<Group> groupList = new ArrayList<>();
 
-    private static Map<Integer,User> userMap;
-    private static Map<String,User> userNameMap;
-    private static Map<Integer,Group> groupMap;
-
+    private static Map<Integer,User> userMap = new HashMap<>();
+    private static Map<String,User> userNameMap = new HashMap<>();
+    private static Map<Integer,Group> groupMap = new HashMap<>();
+    private static Map<String, List<ChatContentVO>> chatMap = new HashMap<>();
 
     public static void init(){
         loadUser();
         loadGroup();
         setFriend();
         setGroup();
+        setUserChatItem();
+    }
+
+    private static void setUserChatItem() {
+        for(int i = 0;i < userList.size();i++){
+            userList.get(i).initChatItem();
+        }
     }
 
     private static void setGroup() {
@@ -37,7 +44,7 @@ public class Cache {
         for(int i = 0;i < userIdList.size();i++){
             User temp = userMap.get(userIdList.get(i));
             group.getUserList().add(new UserVO(temp));
-            temp.getGroupList().add(new GroupVO(group));
+            temp.getGroups().add(new GroupVO(group));
         }
     }
 
@@ -52,14 +59,12 @@ public class Cache {
         User user = userMap.get(userId);
         for(int i = 0;i < friendsId.size();i++){
             User temp = userMap.get(friendsId.get(i));
-            user.getFriend().add(new UserVO(temp));
-            temp.getFriend().add(new UserVO(user));
+            user.getFriends().add(new UserVO(temp));
+            temp.getFriends().add(new UserVO(user));
         }
     }
 
     private static void loadGroup() {
-        groupList = new ArrayList<>();
-        groupMap = new HashMap<>();
         for (int i = 0;i < 20;i++){
             Group group = new Group(i+1,"group"+(i+1));
             groupList.add(group);
@@ -68,9 +73,6 @@ public class Cache {
     }
 
     private static void loadUser() {
-        userList = new ArrayList<>();
-        userMap = new HashMap<>();
-        userNameMap = new HashMap<>();
         for (int i = 0;i < 20;i++){
             User user = new User(i+1,"user"+(i+1),"123456");
             userList.add(user);
@@ -82,5 +84,19 @@ public class Cache {
 
     public static User getUser(String username) {
         return userNameMap.get(username);
+    }
+
+    public static List<ChatContentVO> getChatList(String chatId) {
+        List<ChatContentVO> list = chatMap.get(chatId);
+        return (CollectionUtils.isEmpty(list))?Collections.emptyList():list;
+    }
+
+    public static void addChat(ChatContentVO contentVO) {
+        List<ChatContentVO> list = chatMap.get(contentVO.getChatId());
+        if(list == null){
+            list = new ArrayList<>();
+        }
+        list.add(contentVO);
+        chatMap.put(contentVO.getChatId(),list);
     }
 }
