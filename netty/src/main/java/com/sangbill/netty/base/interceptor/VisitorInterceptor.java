@@ -39,7 +39,7 @@ public class VisitorInterceptor implements HandlerInterceptor {
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute(SESSION_USER);
 		if(user == null){
-			response.sendRedirect("/common/noright");
+			response.sendRedirect("/admin/page/login");
 			return false;
 		}
 		return true;

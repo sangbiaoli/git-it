@@ -74,7 +74,7 @@ public class ChatServiceImpl implements ChatService {
         param.setMessage("收到新消息");
         param.setData(contentVO.getContent());
         String text = JSONObject.toJSONString(param);
-        Channel channel = (Channel) NettyGlobal.channelMap.get(userId);
+        Channel channel = (Channel) NettyGlobal.channelMap.getKey(userId);
         if(channel!=null && channel.isActive()){
             channel.writeAndFlush(new TextWebSocketFrame(text));
         }
