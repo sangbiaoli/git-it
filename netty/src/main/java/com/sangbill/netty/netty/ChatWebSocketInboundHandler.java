@@ -59,6 +59,11 @@ public class ChatWebSocketInboundHandler extends SimpleChannelInboundHandler<Obj
 		ctx.flush();
 	}
 
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
+		cause.printStackTrace();
+	}
+
 	private void handlerWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
 		log.info("execute handleHttpRequest(ChannelHandlerContext ctx, WebSocketFrame frame)");
 		// 本例程仅支持文本消息，不支持二进制消息
