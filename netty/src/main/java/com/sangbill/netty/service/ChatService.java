@@ -14,5 +14,4 @@ public interface ChatService {
 
     Result send(User user, ChatContentVO contentVO);
 
-    void nofityUser(ChatContentVO contentVO);
 }

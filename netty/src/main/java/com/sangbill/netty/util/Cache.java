@@ -99,4 +99,8 @@ public class Cache {
         list.add(contentVO);
         chatMap.put(contentVO.getChatId(),list);
     }
+
+    public static Group getGroup(Integer groupId) {
+        return groupMap.get(groupId);
+    }
 }

@@ -51,14 +51,14 @@ public class User{
         return false;
     }
 
-    public boolean checkFriend(Integer[] userIds) {
-        if(userIds[0] == userIds[1]){
+    public boolean checkFriend(Integer userId1,Integer userId2) {
+        if(userId1 == userId2){
             return false;
         }
-        if(userIds[0] != this.id && userIds[1] != this.id){
+        if(userId1 != this.id && userId2 != this.id){
             return false;
         }
-        Integer friendId = (userIds[0] == this.id)?userIds[1]:userIds[0];
+        Integer friendId = (userId1 == this.id)?userId2:userId1;
         for (UserVO u:this.friends) {
             if(u.getId() == friendId){
                 return true;
