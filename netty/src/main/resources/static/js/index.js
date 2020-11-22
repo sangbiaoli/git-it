@@ -1,9 +1,21 @@
-var common = {
-    getUserId:function(){
-        var cookies = document.cookie.split("&");
-        return cookies[0].split("=")[1];
+var mycook = {
+    obj: {},
+    init:function(){
+        var cookies = document.cookie.split(";");
+        for(var i = 0;i < cookies.length;i++){
+            var s = cookies[i].split("=");
+            mycook.obj[s[0].trim()] = s[1];
+        }
     },
-    loadChatItem:function() {
+    getUserId:function(){
+        return mycook.obj["userId"];
+    },
+    getUserName() {
+        return mycook.obj["username"];
+    },
+};
+var common = {
+    init:function() {
         $.ajax({
             type: "post",
             url: '/admin/chat/loadChatItem',
@@ -41,7 +53,7 @@ var common = {
             data: JSON.stringify(param),
             success: function (data) {
                 if (data.code == 0) {
-                    var userId = common.getUserId();
+                    var userId = mycook.getUserId();
                     $("#chat-his").empty();
                     var lis = "";
                     for(var i = 0;i < data.data.length;i++){
@@ -82,9 +94,12 @@ var common = {
     getChatId:function() {
         return $(".active").attr("data-chat-id");
     }
-}
+};
+
 
 $(function () {
-    common.loadChatItem();
+    mycook.init();
+    common.init();
     netty.init();
+    $("#username").val(mycook.getUserName());
 })

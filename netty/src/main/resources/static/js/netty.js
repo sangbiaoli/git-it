@@ -1,3 +1,4 @@
+
 var netty = {
     socket:null,
     init:function () {
@@ -18,16 +19,16 @@ var netty = {
             var text = "打开WebSoket 服务正常，浏览器支持WebSoket!" + "\r\n";
             var data = {
                 "type":1,
-                "userId" : common.getUserId()
+                "userId" : mycook.getUserId()
             };
             netty.sendMessage(JSON.stringify(data));
             heartCheck.start();
         };
         socket.onclose = function(event) {
-            reconnect();
+            // reconnect();
         };
         socket.error = function(event) {
-            reconnect();
+            // reconnect();
         };
         socket.onmessage = function(event) {
             netty.receiveMessage(event.data);

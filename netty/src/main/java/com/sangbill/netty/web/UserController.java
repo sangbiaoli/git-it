@@ -31,10 +31,15 @@ public class UserController extends BaseController {
 
     private void afterSuccessLogin(HttpServletRequest req, HttpServletResponse resp,User user) {
         req.getSession().setAttribute(VisitorInterceptor.SESSION_USER,user);
-        Cookie cookie = new Cookie("userId",user.getId()+"");
+        resp.addCookie(createCookie("userId",user.getId()+""));
+        resp.addCookie(createCookie("username",user.getUsername()));
+    }
+
+    private Cookie createCookie(String key, String value) {
+        Cookie cookie = new Cookie(key,value);
         cookie.setPath("/");
         cookie.setMaxAge(-1);
-        resp.addCookie(cookie);
+        return cookie;
     }
 
 }
