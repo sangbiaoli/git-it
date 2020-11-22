@@ -3,6 +3,7 @@ package com.sangbill.netty.service.impl;
 import com.sangbill.netty.base.Result;
 import com.sangbill.netty.domain.dto.LoginDTO;
 import com.sangbill.netty.domain.entity.User;
+import com.sangbill.netty.domain.vo.ChatContentVO;
 import com.sangbill.netty.domain.vo.ChatItemVO;
 import com.sangbill.netty.service.ChatService;
 import com.sangbill.netty.service.UserService;
@@ -32,5 +33,10 @@ public class ChatServiceImpl implements ChatService {
     @Override
     public Result loadChatHis(User user, ChatItemVO itemVO) {
         return Result.success("成功", Collections.emptyList());
+    }
+
+    @Override
+    public Result send(User user, ChatContentVO contentVO) {
+        return Result.success("发送成功");
     }
 }

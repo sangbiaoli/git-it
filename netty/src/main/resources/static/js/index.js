@@ -12,9 +12,9 @@ var common = {
                     for(var i = 0;i < data.data.length;i++){
                         var item = data.data[i];
                         if(i == 0){
-                            lis += '<li class="chat-user-item active" data-id="'+item.id+'" data-type="'+item.type+'">'+item.name+'</li>';
+                            lis += '<li class="chat-user-item active" data-chat-id="'+item.chatId+'">'+item.name+'</li>';
                         }else{
-                            lis += '<li class="chat-user-item" data-id="'+item.id+'" data-type="'+item.type+'">'+item.name+'</li>';
+                            lis += '<li class="chat-user-item" data-chat-id="'+item.chatId+'">'+item.name+'</li>';
                         }
                     }
                     $("#chat-users").html(lis);
@@ -26,27 +26,42 @@ var common = {
         });
     },
     loadChatWinHis:function () {
-        var item = $(".active");
-        if(item){
-            var param = {
-                "id":item.attr("data-id"),
-                "type":item.attr("data-type")
-            };
-            $.ajax({
-                type: "post",
-                url: '/admin/chat/loadChatHis',
-                dataType: "json",
-                contentType: "application/json;charset=utf-8",
-                data: JSON.stringify(param),
-                success: function (data) {
-                    if (data.code == 0) {
+        var param = {
+            "chatId":common.getChatId()
+        };
+        $.ajax({
+            type: "post",
+            url: '/admin/chat/loadChatHis',
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(param),
+            success: function (data) {
+                if (data.code == 0) {
 
-                    } else {
-                        alert(data.msg);
-                    }
+                } else {
+                    alert(data.msg);
                 }
-            });
-        }
+            }
+        });
+    },
+    send:function () {
+        var param = {
+            "chatId": common.getChatId(),
+            "content":$("#content").val()
+        };
+        $.ajax({
+            type : "post",
+            url: '/admin/chat/send',
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(param),
+            success : function(data, status) {
+
+            },
+        });
+    },
+    getChatId:function() {
+        return $(".active").attr("data-chat-id");
     }
 }
 

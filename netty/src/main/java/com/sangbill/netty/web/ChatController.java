@@ -3,6 +3,7 @@ package com.sangbill.netty.web;
 import com.sangbill.netty.base.BaseController;
 import com.sangbill.netty.base.Result;
 import com.sangbill.netty.domain.dto.LoginDTO;
+import com.sangbill.netty.domain.vo.ChatContentVO;
 import com.sangbill.netty.domain.vo.ChatItemVO;
 import com.sangbill.netty.service.ChatService;
 import com.sangbill.netty.service.UserService;
@@ -32,5 +33,10 @@ public class ChatController extends BaseController {
         return rs;
     }
 
+    @PostMapping("/send")
+    public Result send(@RequestBody ChatContentVO contentVO){
+        Result rs = chatService.send(getUser(), contentVO);
+        return rs;
+    }
 }
 
