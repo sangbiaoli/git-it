@@ -13,7 +13,6 @@ var common = {
             data: JSON.stringify(param),
             success: function (data) {
                 if (data.code == 0) {
-                    alert('操作成功');
                     window.location.href = "/admin/page/index";
                 } else {
                     alert(data.msg);

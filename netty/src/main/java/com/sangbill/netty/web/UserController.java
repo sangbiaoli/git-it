@@ -27,12 +27,6 @@ public class UserController extends BaseController {
         return rs;
     }
 
-    @PostMapping("/loadChatItem")
-    public Result loadChatItem(){
-        Result rs = userService.loadChatItem(getUser());
-        return rs;
-    }
-
     private void afterSuccessLogin(HttpServletRequest req, Object data) {
         req.getSession().setAttribute(VisitorInterceptor.SESSION_USER,data);
     }

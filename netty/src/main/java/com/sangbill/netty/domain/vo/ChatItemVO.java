@@ -1,8 +1,11 @@
 package com.sangbill.netty.domain.vo;
 
-import com.sangbill.netty.domain.entity.Group;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class ChatItemVO {
     private Integer id;
