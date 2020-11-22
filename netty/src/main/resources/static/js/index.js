@@ -28,9 +28,9 @@ var common = {
                     for(var i = 0;i < data.data.length;i++){
                         var item = data.data[i];
                         if(i == 0){
-                            lis += '<li class="chat-user-item active" data-chat-id="'+item.chatId+'">'+item.name+'</li>';
+                            lis += '<li class="chat-user-item active" data-chat-id="'+item.chatId+'" onclick="common.active(this);">'+item.name+'</li>';
                         }else{
-                            lis += '<li class="chat-user-item" data-chat-id="'+item.chatId+'">'+item.name+'</li>';
+                            lis += '<li class="chat-user-item" data-chat-id="'+item.chatId+'" onclick="common.active(this);">'+item.name+'</li>';
                         }
                     }
                     $("#chat-users").html(lis);
@@ -40,6 +40,18 @@ var common = {
                 }
             }
         });
+    },
+    getChatId:function() {
+        return $(".active").attr("data-chat-id");
+    },
+    active:function(obj){
+        var li = $(".active");
+        var self = $(obj);
+        if(li.attr("data-chat-id") != self.attr("data-chat-id")){
+            li.removeClass("active");
+            self.addClass("active");
+            common.loadChatWinHis();
+        }
     },
     loadChatWinHis:function () {
         var param = {
@@ -90,9 +102,6 @@ var common = {
                 }
             },
         });
-    },
-    getChatId:function() {
-        return $(".active").attr("data-chat-id");
     }
 };
 
