@@ -6,7 +6,7 @@
     <artifactId>dubbo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>dubbo-client</artifactId>
+  <artifactId>dubbo-consumer</artifactId>
   <packaging>jar</packaging>
   
   <dependencies>
