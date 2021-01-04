@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class UserController {
 
-    @Value("${user.name}")
-    private String userName;
+	@Value("${user.name}")
+	private String userName;
 
-    @Value("${user.age}")
-    private int age;
+	@Value("${user.age}")
+	private int age;
 
 	@RequestMapping("/user")
 	public String getUser() {
-		return userName+" "+age;
+		return userName + " " + age;
 	}
 }
