@@ -27,7 +27,7 @@ public class OrderProducer {
         //3. 启动
         producer.start();
         //4. 生产消息
-        List<Order> list =  OrderHelper.buildeOrders();
+        List<Order> list =  OrderHelper.buildOrders();
         for (int i = 0; i < list.size(); i++) {
             Order order = list.get(i);
             Message msg = new Message("top1","tag1",order.getMsg().getBytes());
