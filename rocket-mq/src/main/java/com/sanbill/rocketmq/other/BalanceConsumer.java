@@ -1,13 +1,9 @@
-package com.sanbill.rocketmq.consumer;
+package com.sanbill.rocketmq.other;
 
 
-import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
-import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import com.alibaba.rocketmq.common.message.MessageExt;
-
-import java.util.List;
+import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
+import org.apache.rocketmq.client.consumer.listener.MessageListenerConcurrently;
+import org.apache.rocketmq.common.message.MessageExt;
 
 /**
  * 默认：负载均衡消费方式
@@ -31,6 +27,7 @@ public class BalanceConsumer {
         });
         //5. 启动
         consumer.start();
+        System.out.println("消费者启动");
     }
 
 }

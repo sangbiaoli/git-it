@@ -1,16 +1,15 @@
-package com.sanbill.rocketmq.producer;
+package com.sanbill.rocketmq.other;
 
-
-import com.alibaba.rocketmq.client.producer.DefaultMQProducer;
-import com.alibaba.rocketmq.client.producer.SendResult;
-import com.alibaba.rocketmq.common.message.Message;
+import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.apache.rocketmq.client.producer.SendResult;
+import org.apache.rocketmq.common.message.Message;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * 单向发送消息
+ * 同步发送消息
  */
-public class OneWayProducer {
+public class SyncProducer {
     public static void main(String[] args) throws Exception {
         //1. 创建生产者
         DefaultMQProducer producer = new DefaultMQProducer("p1");
@@ -21,8 +20,9 @@ public class OneWayProducer {
         //4. 生产消息
         for (int i = 0; i < 10; i++) {
             Message msg = new Message("top1","tag1",("hello,world"+i).getBytes());
-            //单向发送
-            producer.sendOneway(msg);
+            //同步发送
+            SendResult send = producer.send(msg);
+            System.out.println(send);
             TimeUnit.SECONDS.sleep(1);
         }
         //5. 关闭生产者

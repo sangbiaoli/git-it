@@ -1,4 +1,6 @@
-package com.sanbill.rocketmq.vo;
+package com.sanbill.rocketmq.order;
+
+import com.sanbill.rocketmq.order.vo.Order;
 
 import java.util.ArrayList;
 import java.util.List;

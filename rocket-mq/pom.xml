@@ -6,14 +6,20 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<rocketmq.version>3.5.8</rocketmq.version>
+		<rocketmq.version>4.8.0</rocketmq.version>
+		<lombok.version>1.18.8</lombok.version>
 	</properties>
 	<dependencies>
 		<!-- RocketMQ -->
 		<dependency>
-			<groupId>com.alibaba.rocketmq</groupId>
+			<groupId>org.apache.rocketmq</groupId>
 			<artifactId>rocketmq-client</artifactId>
 			<version>${rocketmq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
 		</dependency>
 	</dependencies>
 </project>

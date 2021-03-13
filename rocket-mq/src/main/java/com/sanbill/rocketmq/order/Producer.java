@@ -1,12 +1,10 @@
-package com.sanbill.rocketmq.producer;
+package com.sanbill.rocketmq.order;
 
 
 import com.alibaba.rocketmq.client.producer.DefaultMQProducer;
 import com.alibaba.rocketmq.client.producer.MessageQueueSelector;
 import com.alibaba.rocketmq.common.message.Message;
 import com.alibaba.rocketmq.common.message.MessageQueue;
-import com.sanbill.rocketmq.vo.Order;
-import com.sanbill.rocketmq.vo.OrderHelper;
 
 import java.util.List;
 
@@ -18,7 +16,7 @@ import java.util.List;
  * 对于同一个人，这四个步骤是严格按顺序来的，但是broker有多个queue，
  * 因此为了保证顺序，我们要把同一个订单的四个消息发送到同一个queue中
  */
-public class OrderProducer {
+public class Producer {
     public static void main(String[] args) throws Exception {
         //1. 创建生产者
         DefaultMQProducer producer = new DefaultMQProducer("p1");
@@ -30,7 +28,7 @@ public class OrderProducer {
         List<Order> list =  OrderHelper.buildOrders();
         for (int i = 0; i < list.size(); i++) {
             Order order = list.get(i);
-            Message msg = new Message("top1","tag1",order.getMsg().getBytes());
+            Message msg = new Message("OrderTopic","order",order.getMsg().getBytes());
             producer.send(msg, new MessageQueueSelector() {
                 @Override
                 public MessageQueue select(List<MessageQueue> mqs, Message msg, Object arg) {

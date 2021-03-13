@@ -1,16 +1,15 @@
-package com.sanbill.rocketmq.producer;
+package com.sanbill.rocketmq.delay;
 
-
-import com.alibaba.rocketmq.client.producer.DefaultMQProducer;
-import com.alibaba.rocketmq.client.producer.SendResult;
-import com.alibaba.rocketmq.common.message.Message;
+import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.apache.rocketmq.client.producer.SendResult;
+import org.apache.rocketmq.common.message.Message;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * 同步发送消息
+ * 延迟发送消息
  */
-public class SyncProducer {
+public class Producer {
     public static void main(String[] args) throws Exception {
         //1. 创建生产者
         DefaultMQProducer producer = new DefaultMQProducer("p1");
@@ -20,7 +19,9 @@ public class SyncProducer {
         producer.start();
         //4. 生产消息
         for (int i = 0; i < 10; i++) {
-            Message msg = new Message("top1","tag1",("hello,world"+i).getBytes());
+            Message msg = new Message("DelayTopic","delay",("hello,world"+i).getBytes());
+            //messageDelayLevel = "1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 8m 8m 9m 10m 20m 30m 1h 2h";
+            msg.setDelayTimeLevel(2);//设置延迟级别
             //同步发送
             SendResult send = producer.send(msg);
             System.out.println(send);
